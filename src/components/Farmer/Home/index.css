@@ -1,0 +1,72 @@
+.home-container {
+  /* border: 2px solid red; */
+  height: 90vh;
+  margin-top: 4.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  text-align: center;
+  padding-top: 8rem;
+  /* background-image: url("../../../assets/beth-macdonald.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; */
+  /* background-color: rgba(145, 145, 145, 0.377); */
+}
+
+.home-bg {
+  background-image: url("../../../assets/glenn-carstens-peters.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.home-login-signup {
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.button {
+  margin: 2rem;
+}
+
+.button > button {
+  /* border: 2px solid black; */
+  border: 0;
+  padding: 0.5rem 2rem;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  /* box-shadow: 2px 2px 5px gray; */
+  box-shadow: inset 2px 2px 5px rgb(142, 142, 142),
+    inset -2px -2px 5px rgb(228, 228, 228), 2px 2px 5px rgb(87, 87, 87);
+
+  transform: scale(1);
+  transition: transform 0.4s ease-out;
+}
+
+.register-button > button {
+  background-color: black;
+  color: rgb(32, 255, 32);
+}
+
+.register-button > button:hover {
+  background-color: rgba(32, 255, 32, 0.826);
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgb(61, 61, 61), -1px -1px 2px rgb(71, 71, 71);
+}
+
+.login-button > button {
+  background-color: rgba(32, 255, 32, 0.826);
+  color: #000;
+}
+
+.login-button > button:hover {
+  transform: scale(1.2);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: transform 0.4s ease-in;
+  text-shadow: 1px 1px 2px rgb(0, 195, 255), -1px -1px 2px rgb(0, 255, 174),
+    1px 1px 3px black;
+}

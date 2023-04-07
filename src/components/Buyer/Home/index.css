@@ -1,0 +1,27 @@
+.buyer-home-bg {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(61, 245, 167, 1) 11.2%,
+    rgba(9, 111, 224, 1) 91.1%
+  );
+}
+
+.buyer-home-text {
+  color: #fff;
+}
+
+.buyer-auth-btn > button {
+  background-color: gold;
+}
+
+.buyer-register-button > button {
+  background-color: black;
+  color: #fff;
+}
+
+.buyer-register-button > button:hover {
+  transform: scale(1.2);
+  transition: transform 0.4 ease-in;
+  background-color: gold;
+  color: #000;
+}

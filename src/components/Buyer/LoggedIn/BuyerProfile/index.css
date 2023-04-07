@@ -1,0 +1,27 @@
+.Buyer-profile-container {
+  padding-top: 80px;
+  /* border: 2px solid red; */
+  height: 100vh;
+  display: flex;
+}
+
+.Buyer-profile-left {
+  /* border-right: 2px solid black; */
+  box-shadow: 2px 0px 10px gray;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.Buyer-profile-right {
+  /* border: 2px solid red; */
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

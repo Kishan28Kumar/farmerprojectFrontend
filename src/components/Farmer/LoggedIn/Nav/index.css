@@ -1,0 +1,70 @@
+.loggedin-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  background-image: radial-gradient(
+    circle at 20% 50%,
+    rgb(0, 192, 67),
+    rgb(0, 164, 106)
+  );
+  /* box-shadow: 0px 4px 10px gray; */
+  box-shadow: inset 4px 4px 5px rgba(94, 94, 94, 0.824),
+    inset -4px -4px 5px rgb(255, 239, 239), 2px 2px 5px rgb(54, 54, 54);
+}
+
+.loggedin-navbar-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  padding: 5px 20px;
+  /* contain: content; */
+}
+
+.loggedin-navbar-container > div {
+  float: right;
+  display: flex;
+}
+
+.loggedin-navbar-container > div > ul {
+  display: flex;
+  list-style-type: none;
+  font-weight: bold;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.loggedin-navbar-container > div > ul > li {
+  margin-right: 30px;
+  box-sizing: border-box;
+}
+
+.loggedin-navbar-container > div > ul > li > a {
+  cursor: pointer;
+}
+
+.loggedin-navbar-container > div > ul > li > a:hover {
+  /* color: red; */
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px aquamarine, 1px 1px 3px white;
+}
+
+.loggedin-navbar-container > div > ul > li > button {
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: rgb(203, 0, 0);
+  border: 0;
+  box-shadow: inset 2px 2px 5px rgb(59, 59, 59), inset -2px -2px 5px #fff,
+    2px 2px 5px rgb(35, 35, 35);
+  color: #fff;
+  border-radius: 4px;
+}
+
+.loggedin-navbar-container > div > ul > li > button:hover {
+  transform: scale(1.2);
+  background-color: red;
+}

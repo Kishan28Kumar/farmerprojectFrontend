@@ -1,0 +1,115 @@
+.myproduct-container {
+  box-sizing: border-box;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 0px 0px 10px gray; */
+  box-shadow: inset 4px 4px 5px rgb(161, 161, 161), inset -4px -4px 5px #fff,
+    2px 2px 5px rgb(44, 44, 44);
+  background-color: rgb(87, 255, 199);
+  margin-bottom: 100px;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+
+.myproduct-container:hover {
+  /* transform: scale(1.1) rotateY(-30deg); */
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in;
+}
+
+/* .myproduct-container:nth-child(2n):hover {
+  transform: perspective(500px) rotateY(-30deg);
+}
+
+.myproduct-container:nth-child(2n + 1):hover {
+  transform: perspective(500px) rotateY(30deg);
+} */
+
+.myproduct-image {
+  /* border: 2px solid blue; */
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.myproduct-image > img {
+  width: 250px;
+  height: 200px;
+}
+
+.myproduct-detail-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(0, 255, 234); */
+  padding-bottom: 5px;
+}
+
+.myproduct-detail-up > div > p {
+  margin: 0;
+  padding: 0;
+  /* border: 2px solid red; */
+  margin-top: 6px;
+}
+
+.myproduct-price-container {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(87, 255, 199); */
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.myproduct-price-container > p {
+  margin: 0;
+  padding: 0;
+  /* margin-bottom: 10px; */
+  text-align: center;
+}
+
+.myproduct-price {
+  padding: 10px 20px !important;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+}
+
+.myproduct-detail-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.myproduct-date {
+  padding: 10px 0 !important;
+}
+
+.myproduct-remove-btn {
+  width: 100%;
+  padding: 7px 0;
+  border: 0;
+  /* border-bottom-left-radius: 5px; */
+  /* border-bottom-right-radius: 5px; */
+  background-color: rgb(0, 99, 77);
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.myproduct-remove-btn:hover {
+  background-color: red;
+}

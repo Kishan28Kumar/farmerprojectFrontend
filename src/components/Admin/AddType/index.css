@@ -1,0 +1,54 @@
+.admin-addtype-container {
+  border: 2px solid red;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-addtype-container > h1 {
+  font-size: 30px;
+}
+
+.type-field-container {
+  /* border: 2px solid red; */
+  box-shadow: 0px 0px 5px black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 20px 10px;
+}
+
+.type-field-container > input {
+  width: 80%;
+  height: 2.25rem;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: 0;
+  box-shadow: 0px 0px 5px black;
+  padding-left: 10px;
+}
+
+.type-field-container > input:focus {
+  outline: none;
+}
+
+.type-field-container > button {
+  width: 40%;
+  height: 2rem;
+  border: 2px solid black;
+  background-color: navy;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px black;
+}
+
+.type-field-container > button:hover {
+  background-color: rgb(0, 255, 157);
+}

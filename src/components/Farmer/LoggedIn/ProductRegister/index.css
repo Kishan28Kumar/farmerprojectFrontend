@@ -1,0 +1,188 @@
+.product-form-container {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.form-container {
+  /* width: fit-content; */
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  /* box-shadow: 0px 0px 5px green; */
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  background-color: #fafafae4;
+  box-shadow: inset 2px 2px 5px rgb(179, 179, 179), inset -2px -2px 10px white,
+    2px 2px 5px rgb(179, 179, 179);
+}
+
+.selectContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#selectTypeName,
+#selectCropName {
+  width: 100%;
+}
+
+.product-type,
+.product-name {
+  width: 48%;
+}
+
+.form-container > div {
+  margin-top: 15px;
+}
+
+.form-container > div > input,
+select {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 15px;
+  border: 0;
+  padding-left: 1rem;
+}
+
+.product-quantity > input,
+.product-image,
+.product-price > input,
+.product-variety > input,
+.product-type > select,
+.product-name > select {
+  box-shadow: inset 2px 2px 2px rgb(186, 186, 186), inset -2px -2px 10px white,
+    2px 2px 5px rgb(186, 186, 186);
+  background-color: inherit;
+  border-radius: 5px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.product-image > label {
+  width: 100%;
+  display: block;
+}
+
+.form-container > div > input,
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.form-container > div > div > select > option {
+  font-size: 20px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.imageLabel > input {
+  display: none;
+}
+
+.product-image {
+  text-align: center;
+  /* border: 2px solid black; */
+  border: 0;
+  padding: 10px 20px;
+}
+
+.product-submit > button {
+  margin-top: 10px;
+  width: 100%;
+  /* border: 1px solid #242424; */
+  border: 0;
+  height: 2.25rem;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+  /* background-color: rgb(31, 197, 31); */
+  background: #434343 none repeat scroll 0% 0%;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 0 0 rgba(0, 0, 0, 0.5) inset,
+    0 1.25rem 0 rgba(255, 255, 255, 0.08) inset,
+    0 -1.25rem 1.25rem rgba(0, 0, 0, 0.3) inset,
+    0 1.25rem 1.25rem rgba(255, 255, 255, 0.1) inset;
+
+  transition: all 0.2s linear 0s;
+}
+
+.product-submit > button:hover,
+button:focus {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5),
+    0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 0 0 rgba(0, 0, 0, 0.25) inset,
+    0 20px 0 rgba(255, 255, 255, 0.03) inset,
+    0 -20px 20px rgba(0, 0, 0, 0.15) inset,
+    0 20px 20px rgba(255, 255, 255, 0.05) inset;
+}
+
+.product-submit > button:active {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 1px 0 rgba(255, 255, 255, 0) inset, 0 0 5px rgba(0, 0, 0, 0.5) inset,
+    0 20px 0 rgba(255, 255, 255, 0.03) inset,
+    0 -20px 20px rgba(0, 0, 0, 0.15) inset,
+    0 20px 20px rgba(255, 255, 255, 0.05) inset;
+}
+
+.product-submit > button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(50%, rgba(255, 255, 255, 1)),
+    color-stop(100%, rgba(255, 255, 255, 0))
+  );
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  padding: x 12px;
+  top: 0;
+  left: 15%;
+  height: 1px;
+  width: 40%;
+  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.product-submit > button:active::before {
+  opacity: 0;
+}
+
+.product-submit > button:hover::before {
+  left: 45%;
+}

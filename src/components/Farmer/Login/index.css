@@ -1,0 +1,70 @@
+.login-container {
+  /* border: 2px solid red; */
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.login-to-home-link {
+  text-decoration: none;
+}
+
+.login-to-home-link > h1 {
+  width: 100%;
+  padding-left: 2rem;
+  color: black;
+}
+
+.login-nav {
+  height: inherit;
+  width: 40%;
+
+  position: relative;
+  background-image: url("../../../assets/glenn-carstens-peters-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.login-form-container {
+  /* border: 2px solid red; */
+  height: inherit;
+  width: 60%;
+  text-align: center;
+  position: relative;
+  /* background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #fffb7d 0%, #85ffbd 100%); */
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeeabb 0%, #2af59ad0 100%);
+  /* background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%); */
+}
+
+.login-form {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.login-btn-box > button {
+  padding: 0.5rem 3rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px black;
+  background-color: #2af59ad0;
+  font-weight: bold;
+  transform: scale(1);
+  transition: transform 0.4s ease-out;
+}
+
+.login-btn-box > button:hover {
+  background-color: black;
+  color: #2af59ad0;
+  box-shadow: 0px 0px 5px #fff;
+}
+
+.login-btn-box > button:active {
+  transform: scale(1.1);
+}
