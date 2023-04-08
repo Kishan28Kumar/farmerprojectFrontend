@@ -120,7 +120,7 @@ function Landing(){
                     </div>
 
                     <div className="footer-bottom">
-                        <p>Copyright &copy;  2022</p>
+                        <p>Copyright &copy;  2023</p>
                     </div>
                 </div>
 
